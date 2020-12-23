@@ -1,4 +1,9 @@
 # Project-2: Chess App 
+
+## Notes
+
+* This is a project I worked on with a small group at revature. I was responsible for the back-end, server-side portion of the application. I made use of the Spring framework, including modules like SpringMVC. I earned valuable experience communicating with the front-end team, ensuring that my systems were able to communicate with theirs and perform the required work.
+
 ## Team Members:
 
 * Suva Shahria
