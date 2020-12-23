@@ -1,7 +1,6 @@
 # Project-2: Chess App 
 
 ## Notes
-
 * This is a project I worked on with a small group at revature. I was responsible for the back-end, server-side portion of the application. I made use of the Spring framework, including modules like SpringMVC. I earned valuable experience communicating with the front-end team, ensuring that my systems were able to communicate with theirs and perform the required work.
 
 ## Team Members:
@@ -21,7 +20,7 @@ Chess App is a full-stack web application that allows users to login and play ch
 * Users can challenge other users to a chess match over the internet.
 * Users can play chess against other users online.
 * Users can replay their old games.
-* Users can view all users, their incomplete games, and pending games. 
+* Users can view all users, and pending games. 
 * Users can logout. 
 
 ## Technology Stack
@@ -34,7 +33,7 @@ Chess App is a full-stack web application that allows users to login and play ch
 * We used **SpringMVC** to leverage the Dispatcher-Servlet to create a FrontController design pattern to communicate with the back-end.
 * The back-end system uses **SpringMVC** along with **Hibernate** to connect to an **AWS RDS Postgres database**. 
 * Passwords are encrypted in **Java** and securely stored in the database. 
-* The middle tier follows proper layered architecture and has reasonable (~70%) test coverage of the service layer. 
+* The middle tier follows proper layered architecture and has test coverage of the service layer. 
 
 ### Misc
 * **GitHub** and **GitBash** for version control.
