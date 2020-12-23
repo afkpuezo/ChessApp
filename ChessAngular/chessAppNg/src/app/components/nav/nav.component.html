@@ -1,0 +1,40 @@
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<div class="navbar-header" >
+				
+				<button  class="navbar-toggle" type="button" data-toggle="collapse"
+				data-target="#navbarToggler" aria-controls="navbarToggler"
+				aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+			</div>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarToggler">
+			<ul class="nav navbar-nav" *ngIf="!user" aria-expanded="true">
+				<a class="navbar-brand" routerLink="/" >
+					<img class="crown" src={{crown}}/>
+					</a>
+				<li  ><a routerLink="/login">Login</a></li>
+                <li><a routerLink="/tips">Tips</a></li>
+				<li><a routerLink="/register">Register</a></li>
+			</ul>
+
+			<ul class="nav navbar-nav" *ngIf="user">
+				<a class="navbar-brand" routerLink="/home" >
+					<img class="crown" src={{crown}}/>
+					</a>
+				<li><a routerLink="/play">Play</a></li>
+				<li><a routerLink="/playvs">PlayVs</a></li>
+				<li><a routerLink="/replay">Replay</a></li>
+				<li><a routerLink="/tips">Tips</a></li>
+				<li><a class="nav-item nav-link" (click)="logout()">Logout</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>

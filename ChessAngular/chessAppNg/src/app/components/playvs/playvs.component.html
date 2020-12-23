@@ -1,0 +1,30 @@
+<div id = "playDiv">
+  
+    <p>Click Piece before creating Game </p>
+    
+    <img src="assets/img/chesspieces/wikipedia/bQ.png" (click)= "setPiece('./assets/img/chesspieces/wikipedia/{piece}.png')">
+    <img src="assets/img/chesspieces/alpha/bQ.png" (click)= "setPiece('./assets/img/chesspieces/alpha/{piece}.png')">
+    <img src="assets/img/chesspieces/uscf/bQ.png" (click)= "setPiece('./assets/img/chesspieces/uscf/{piece}.png')">
+    <br>
+    <p>Colors</p>
+   
+    <button (click)="color(1)">Classic</button>
+    &nbsp;
+    <button (click)="color(2)">Pop</button>
+    &nbsp;
+    <button (click)="color(3)">Reset</button>
+    &nbsp;
+    <button (click)="color(4)">Royal </button>
+    &nbsp;
+    <button (click)="color(5)">Vibrant </button>
+    &nbsp;
+    <button (click)="toggle()">Toggle Highlight</button>
+    &nbsp;
+    <br>
+    <button (click)="generateCode()">Generate Code</button>
+    &nbsp;
+    <p>code: {{code}}</p>
+    <input [(ngModel)] = "code" type="number">
+    <button (click)="findGame()">Find Game</button>
+  
+  </div>

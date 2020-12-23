@@ -1,0 +1,60 @@
+<div class="panel-heading">
+    <span class="label label-default label-center" id="title" *ngIf="user" >Welcome  {{this.userValue.username}}</span>
+    <div class="text-center">
+    <img class="shield"  src={{shield}}/>
+</div>
+</div>
+<div class="panel-body">
+
+</div>
+<div class="panel-heading">
+    <span class="label label-default label-center" id="history" >Previous Matches</span>
+        
+</div>
+<div class="panel-body">
+    <ul class="match-history">
+        <li *ngFor="let match of matches" [class.selected]="match === selectedMatch">
+            <span class="box"></span> Game Code: {{match.code}} <br/>
+            <span>White: {{match.whiteUser.username}}</span> Black: {{match.blackUser.username}} <br/>
+            <span><strong>{{match.status}}</strong></span><br/>  
+        </li>
+    </ul>
+</div>
+
+<div class="panel-heading">
+    <span class="label label-default label-center" id="users-list">Users</span>
+</div>
+<div class="panel-body">
+    <ul class="users">
+        <li *ngFor="let user of users" [class.selected]="user === selectedUser">
+            <span class="box">ID: {{user.id}}</span> {{user.username}}
+        </li>
+    </ul>
+</div>
+
+<div class="panel-heading">
+    <span class="label label-default label-center" id="pending-games">Pending Games</span>
+</div>
+<div class="panel-body">
+    <ul class="pending-games">
+        <li *ngFor="let game of games" [class.selected]="game === games">
+            <span class="box">Game ID: {{game.code}}</span> Username: {{game.whiteUser.username}}
+        </li>
+    </ul>
+</div>
+<!-- <div class="panel-heading">
+    <span class="label label-default label-center" id="player-search">Looking for a Specific Game?</span>
+</div>
+<div class="panel-body">
+    <ul class="player-found">
+        <div>
+            <label> Player Name:
+                <input #Player />
+            </label>
+             
+            <button (click)="getAllGamesWithPlayer(playerName.value); playerName.value=''">
+                Find Match!
+            </button>
+        </div>
+    </ul> 
+</div>-->

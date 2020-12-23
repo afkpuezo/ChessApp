@@ -1,0 +1,20 @@
+.navbar-brand {
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+.crown{
+    height: 100%;
+    width: auto;
+}
+
+.navbar{
+    background: #AAF0D1;
+}
+/*Makes the navbar append to the top of the page always. */
+
+/* .navbar-default {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+} */

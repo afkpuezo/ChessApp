@@ -1,0 +1,24 @@
+<div id = "playDiv">
+  
+    <p>Click icon to recreate game </p>
+    
+    <img src="assets/img/chesspieces/wikipedia/bQ.png" (click)= "createGame('./assets/img/chesspieces/wikipedia/{piece}.png')">
+    <img src="assets/img/chesspieces/alpha/bQ.png" (click)= "createGame('./assets/img/chesspieces/alpha/{piece}.png')">
+    <img src="assets/img/chesspieces/uscf/bQ.png" (click)= "createGame('./assets/img/chesspieces/uscf/{piece}.png')">
+    <p>Colors</p>
+    <br>
+    <button (click)="color(3)">Reset</button>
+    &nbsp;
+    <button (click)="color(1)">Classic</button>
+    &nbsp;
+    <button (click)="color(2)">Pop</button>
+    &nbsp;
+    <button (click)="color(4)">Royal </button>
+    &nbsp;
+    <button (click)="color(5)">Vibrant </button>
+    &nbsp;
+    <button (click)="toggle()">Toggle Highlight</button>
+    
+  
+  </div>
+  
